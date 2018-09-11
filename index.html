@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Берегиня</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- <link rel="stylesheet" href="css/main.min.css"> -->
+
+	<link rel="stylesheet" href="css/flyacts.css">
+	<link rel="stylesheet" href="css/header.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	
+	<!-- <style>
+		
+
+		.loaderArea {
+		  background: linear-gradient(90deg, #FF4E50 10%, #F9D423 90%);
+		  overflow: hidden;
+		  position: fixed;
+		  left: 0;
+		  top: 0;
+		  right:0;
+		  bottom:0;
+		  z-index: 100000;
+		}
+
+		.loader {
+		  height: 40px;
+		  width: 40px;
+		  position: absolute;
+		  left: 50%;
+		  margin-left: -20px;
+		  top: 50%;
+		  margin-top: -20px;
+		}
+		  
+		  .loader:before,
+		  .loader:after {
+		    content: "";
+		    height: 40px;
+		    width: 40px;
+		    border: 8px solid rgba(255,255,255,.5);
+		    border-radius: 10px;
+		    position: absolute;
+		    top: 0;
+		  }
+		  
+		  .loader:before {
+		    animation: animate 2s infinite linear;
+		  }
+		  
+		  .loader:after {
+		    animation: animate2 2s infinite linear;
+		  }
+		}
+
+		@keyframes animate {
+		  100% {
+		    transform: rotate(180deg) skew(360deg);
+		  }
+		}
+
+		@keyframes animate2 {
+		  100% {
+		    transform: rotate(-180deg) skew(-360deg);
+		  }
+		}
+	</style> -->
+
+	<style>
+		.loaderArea {
+		  background:#ECF0F1;
+		  overflow: hidden;
+		  position: fixed;
+		  left: 0;
+		  top: 0;
+		  right:0;
+		  bottom:0;
+		  z-index: 100000;
+		}
+
+.loader{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width:100px;
+  height:100px;
+}
+.loader hr{
+	border:0;
+	margin:0;
+	width:40%;
+	height:40%;
+	position:absolute;
+	border-radius:50%;
+	animation:spin 2s ease infinite;
+}
+
+.loader .cicle:first-child{background:#19A68C;animation-delay:-1.5s}
+.loader .cicle:nth-child(2){background:#F63D3A;animation-delay:-1s}
+.loader .cicle:nth-child(3){background:#FDA543;animation-delay:-0.5s}
+.loader .cicle:last-child{background:#193B48}
+.circle .cicle:first-child{background-color: red !important;animation-delay:-1.5s;}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
+}
+	</style>
+
+	
+
+
+
+</head>
+
+<body class="ishome">
+
+<div class="loaderArea">
+   <div class="loader">
+   	 <hr class="cicle">
+   	 <hr class="cicle">
+   	 <hr class="cicle">
+   	 <hr class="cicle">
+
+   </div>
+</div>
+
+<div id="my-page">
+
+      	<header class="site_header">
+      		<div class="top_header_line">
+      			<div class="container">
+      				<div class="row">
+      					<div class="col-md-3 col-xs-1">
+      						<img src="img/logo.png" class="logo" alt="Аквамаркет">
+      						<span class="lodo_deck"></span>
+      						<img src="img/title_blue.png" alt="Берегиня" class="title_blue">
+      					</div>
+
+      					<div class="col-md-3 callback">
+      						<p class="callback_phone">8877 callback</p>
+      						<p class="callback_description">безкоштовно з мобільного</p>
+      					</div>
+
+      					<div class="col-md-3 col-md-offset-0 col-xs-7 col-xs-offset-1">
+      						<p class="back_call"><i class="fa fa-phone"></i>Зворотній дзвінок</p>
+      					</div>
+      					
+		      				<div class="col-md-1 col-md-offset-4 col-xs-2">
+		      					<a href="#my-menu" class="hamburger hamburger--collapse">
+				      				<span class="hamburger-box">
+				   						<span class="hamburger-inner"></span>
+				  					</span>
+				      			</a>
+				      			<nav id="my-menu">
+				      				<ul id ="test_ul_m">
+				      					<li><a href="#my-page">Головна</a></li>
+				      					<li><a href="#info_wather_menu">Хімічний склад</a></li>
+				      					<li><a href="#why-content">Етапи очищення води «Берегиня»</a></li>
+				      					<li><a href="#price">Ціни</a></li>
+				      				</ul>
+				      			</nav>
+		      				</div>
+      				</div>
+      			</div>
+      		</div>
+
+      		<div class="middle_header_line">
+      			<div class="ornament"></div>
+      			<div class="container">
+      				<div class="row">
+      					<div class="col-md-1 col-sm-0 initial_position">
+      						<img src="img/60m.png" class="img_60m" alt="Глубина свердловини 60м">
+      					</div>
+      					<div class="col-md-6 col-sm-7">
+      						<img src="img/water_header.png" class="img-responsive water_header wow rollIn" data-wow-delay="1.3s" alt="Берегиня">
+      					</div>
+      					<div class="col-md-5 col-sm-5 text-right title_col lightSpeedIn" data-wow-delay="1.3s">
+      						<img src="img/title.png" class="title_header" alt="Берегиня">
+      						<img src="img/title_blue.png" class="title_mobile" alt="Берегиня">
+      						<p>питна артезіанська вода</p>
+      						<p class="size">Обєм: 18,9 л</p>
+      						<button class="order_water" data-toggle="modal" data-target="#myModal" value="1" title="89 грн." name="89 грн.">Замовити воду</button>
+      					</div>
+      				</div>
+      			</div>
+      		</div>
+      	</header>
+
+
+      <div id="my-content">
+     
+     <section id="descript_water">
+     	<div class="container">
+     		<div class="row">
+     			<div class="col-md-7">
+     				<p>«Берегиня» – чиста питна вода, видобута з артезіанської свердловини Юрського геологічного періоду, на глибині 60 метрів, в екологічно чистій зоні України, в місті Коростень.
+</p>
+     				<p>Проходить лише м`яку доочистку, завдяки чому зберігає структуру води такою, як її створила 
+природа. Додатково збагачена йодом, в його стабільній іонній формі. Концентрація йоду 30-50 мкг 
+на один літр води, що відповідає оптимальній дозі для профілактики йододефіцитних захворювань, 
+а також підтримання повноцінного обміну речовин.
+</p>
+     				<p>Берегиня рекомендується для тих, хто підтримує активний спосіб життя, а також оптимальна для
+щоденного вживання.
+</p>
+     				<span class="guaranty">«Берегиня» - запорука здоров'я Вашої родини</span>
+     			</div>
+     			<div class="col-md-5">
+     				<img src="img/family.png" class="img-responsive" alt="family">
+     			</div>
+     		</div>
+     	</div>
+     </section>
+
+
+    <section id="info_wather_menu">
+	  	<div class="container">
+	  		<div class="row">
+	  			<div class="col-md-12 text-center"><h1>Хімічний склад</h1></div>
+	  		</div>
+			<img src="img/molecula.png" alt="" class="img-molecula_1 img-responsive parallax__layer--base">
+	  		<div class="row">
+
+	  			<div class="col-md-3 anion">
+	  				<div class="figure"><span class="description-first-figure">Аніони</span><p class="anion_title">Аніони</p><span>F <sup>-</sup><1.5</span></div>
+	  				<div class="figure"><span>CO <sup class="anion_middle_sup">2+</sup><50</span></div>
+	  				<div class="figure"><span>CI <sup class="anion_bottom_sup">2+</sup><30</span></div>
+	  				
+	  			</div>
+
+	  			<div class="col-md-6 text-center">
+					<img src="img/water_header.png" class="img-responsive info_wather_img" alt="">
+	  			</div>
+
+	  			<div class="col-md-3 kation">
+					<div class="figure"><span class="description-first-figure">Катіони</span><p class="cation_title">Катіони</p><span>Ca <sup>2+</sup><80</span></div>
+	  				<div class="figure"><span>Mg <sup>2+</sup><20</span></div>
+	  				<div class="figure"><span>I 30-50</span></div>
+	  				<img src="img/molecula.png" alt="" class="img-molecula_2 img-responsive">
+	  			</div>
+
+	  		</div>
+
+	  		<div class="row">
+	  			<div class="col-md-12 text-center">
+	  				<p>Мінералізація, мг/ дм <sup>3</sup>	: 200-300</p>
+	  			</div>
+	  		</div>
+	  		 
+	  	</div>
+  	</section>
+
+
+  	<section id="why" class="section3">
+  		<div class="divider"></div>
+  		<h1>Етапи очищення води «Берегиня»</h1>
+			<div class="container">
+  			<div class="row">
+  				<div class="col-md-12">
+  					<ul class="show_mobile">
+  						<div class="line_step_ul"></div>
+  						<li>
+  							<p class="title_li">Механічний фільтр</p>
+  							<p class="filter_deck">Очищення від піску, осаду <br> та важких <br> частинок</p>
+  						</li>
+  						<li>
+  							<p class="title_li">Вугільний фільтр</p>
+  							<p class="filter_deck">позбавлення від хлору,<br> органічних частинок,<br> покращення запаху та <br> присмаку води</p>
+  						</li>
+  						<li>
+  							<p class="title_li">Мультимедійний фільтр</p>
+  							<p class="filter_deck">очищення від іржі, зниження<br> каламутності, покращення <br> прозорості води</p>
+  						</li>
+  						<li>
+  							<p class="title_li">Ультрафіолетова лампа</p>
+  							<p class="filter_deck">знезараження води <br> ультрафіолетом,<br>позбавлення від мікробів <br>та шкідливих <br> мікроорганізмів</p>
+  						</li>
+  						<li>
+  							<p class="title_li">Насичення йодом</p>
+  							<p class="filter_deck">оптимізація йодового балансу<br>в організмі</p>
+  						</li>
+  					</ul>
+  				</div>
+  			</div>
+  			</div>
+            <div id="why-content" class="centered content">
+
+                <div id="trigger4" class="spacer s0"></div>
+                <div class="mechanical_filter filter_title"><p>Механічний фільтр</p></div>
+                <img src="img/filtr1.png" class="centered punkt-gross punkt1" style="width:80px;" alt="Punkt groß" />
+                <div class="mechanical_filter_deck"><p class="filter_deck">Очищення від піску, осаду та важких <br> частинок</p></div>
+
+                <!--Lines-->
+
+                <div class="line1 line"></div>
+                <div class="line2 line"></div>
+                <div class="line3 line"></div>
+                <div class="line4 line"></div>
+                <div class="line5 line"></div>
+                <div class="line8 line"></div>
+                <div class="line9 line"></div>
+                <div class="line6 line"></div>
+                <div class="line7 line"></div>
+                <div class="line8 line"></div>
+                <div class="line10 line"></div>
+          
+                <div class="coalfilter filter_title"><p>Вугільний фільтр</p></div>
+                <div class="coalfilter_deck"><p class="filter_deck">позбавлення від хлору,<br> органічних частинок,<br> покращення запаху та <br> присмаку води</p></div>
+
+
+                <div class="multimedia_filter filter_title"><p>Мультимедійний фільтр</p></div>
+                <img src="img/filtr3.png" class="img_filter_3 img_filter" alt="Мультимедійний фільтр">
+                <div class="multimedia_filter_deck"><p class="filter_deck">очищення від іржі, зниження<br> каламутності, покращення <br> прозорості води</p></div>
+				
+
+				<div class="ultraviolet_filter filter_title"><p>Ультрафіолетова лампа</p></div>
+                <img src="img/filtr4.png" class="img_filter_4 img_filter" alt="Ультрафыолетова лампа">
+                <div class="ultraviolet_filter_deck"><p class="filter_deck">знезараження води <br> ультрафіолетом,<br>позбавлення від мікробів <br>та шкідливих <br> мікроорганізмів</p></div>
+
+
+                <div class="iodine_filter filter_title"><p>Насичення йодом</p></div>
+                <img src="img/filtr5.png" class="img_filter_5 img_filter" alt="Насичення йодом">
+                <div class="iodine_filter_deck"><p class="filter_deck">оптимізація йодового балансу<br>в організмі</p></div>
+
+
+
+                <!-- Device usage -->
+               
+                <img src="img/filtr2.png" class="device1" alt="144 min/Tag wird ein Laptop/Desktop genutzt" />
+                             
+                <img src="img/molecula.png" class="anzeigepunkt6 alpha-in" style="width:12px;" alt="Punkt" />
+                <img src="img/molecula.png" class="device3 alpha-in" alt="182 min/Tag wird ein Smartphone genutzt" />
+
+            </div>
+
+            
+
+        </section>
+    
+
+
+  	<section id="price">
+  		<div class="container">
+  			<div class="row text-center">
+  				<div class="col-md-12">
+  					<h1>Ціни</h1>
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-md-3 col-sm-6">
+  					
+					<div class="product">
+						<div class="product-header">
+							<p class="product_name">
+								Питна вода «Берегиня» <br>
+								18,9 л <br>
+								від 1 шт.
+							</p>
+						</div>
+						<div class="product_body">
+							<p class="product_price">89 <sup>00</sup>грн/шт.</p>
+							<p class="Saving"><br></p>
+							<button class="order_water" value="1" title="89 грн." name="89 грн.">Замовити</button>
+						</div>
+					</div>
+
+  				</div>
+  				<div class="col-md-3 col-sm-6">
+  					
+					<div class="product">
+						<div class="product-header">
+							<p class="product_name">
+								Питна вода «Берегиня» <br>
+								18,9 л <br>
+								від 2 шт.
+							</p>
+						</div>
+						<div class="product_body">
+							<p class="product_price">82 <sup>00</sup>грн/шт.</p>
+							<p class="Saving">Економія від 7 грн/шт.</p>
+							<button class="order_water" value="2" title="164 грн." name="82 грн.">Замовити</button>
+						</div>
+					</div>
+
+  				</div>
+  				<div class="col-md-3 col-sm-6">
+  					
+					<div class="product">
+						<div class="product-header">
+							<p class="product_name">
+								Питна вода «Берегиня» <br>
+								18,9 л <br>
+								від 6 шт.
+							</p>
+						</div>
+						<div class="product_body">
+							<p class="product_price">76 <sup>00</sup>грн/шт.</p>
+							<p class="Saving">Економія від 13 грн/шт.</p>
+							<button class="order_water" value="6" title="456 грн." name="76 грн.">Замовити</button>
+						</div>
+					</div>
+
+  				</div>
+  				<div class="col-md-3 col-sm-6">
+
+
+  					<div class="product">
+						<div class="product-header">
+							<p class="product_name">
+								Питна вода «Берегиня» <br>
+								18,9 л <br>
+								від 11 шт.
+							</p>
+						</div>
+						<div class="product_body">
+							<p class="product_price">72 <sup>00</sup>грн/шт.</p>
+							<p class="Saving">Економія від 17 грн/шт.</p>
+							<button class="order_water" value="11" title="792 грн." name="72 грн.">Замовити</button>
+						</div>
+					</div>
+  					
+					<div class="product show_product">
+						<div class="product-header">
+							<p class="product_name">Питна вода «Берегиня» </p>
+							<p class="product_name">	18,9 л</p>
+							
+							<p class="product_name number_of_bottles"> 
+								<i class="fa fa-minus" aria-hidden="true"></i>
+								<input type="text" class="number_of_bottles_value" pattern="[0-9]{10}" onkeypress='validate(event)' value="1" readonly></input>
+								<i class="fa fa-plus" aria-hidden="true" ></i>
+							</p>
+							
+						</div>
+						<div class="product_body">
+							<p class="product_price">89 <sup>00</sup>грн/шт.</p>
+							<p class="Saving"><br></p>
+							<button class="order_water_mobile">Замовити</button>
+						</div>
+					</div>
+
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+   
+
+      </div>
+		
+      <div id="my-footer">
+      	<div class="ornament"></div>
+      	<div class="container">
+      		<div class="row">
+
+      			<div class="col-md-2 tl">
+      				<img src="img/logo2.png" alt="">
+      			</div>
+
+      			<div class="col-md-3">
+      				<a href="tel:8877 "><i class="fa fa-mobile"></i>8877 callback  <br>безкоштовно з мобільного</a>
+      			</div>
+
+				<div class="col-md-2">
+      				<!-- <p href="tel:(067) 555-88-77"><i class="fa fa-mobile"></i>(067) 555-88-77 <br>
+      				для мобільного</p> -->
+      				<a href="tel:(067) 555-88-77"><i class="fa fa-mobile"></i>(067) 555-88-77 <br>для мобільного</a>
+      			</div>
+
+      			<div class="col-md-2">
+      				<a href="tel:(044) 455-88-38 "><i class="fa fa-phone"></i>(044) 455-88-38 </a> <br>
+      				<a href="tel:(044) 593-3-777 "><i class="fa fa-phone"></i>(044) 593-3-777 </a> <br>
+      				
+      			</div>
+
+      			<div class="col-md-3">
+      				<a href="https://aquamarket.ua/uk/" class="shop">aquamarket.ua</a>
+      			</div>
+
+      		</div>
+      	</div>
+      </div>
+
+   </div>
+
+	
+	<div class="curtains hidden"></div>
+
+
+	
+	<div class="popup hidden">
+		<div class="close"><i class="fa fa-times-circle"></i></div>
+		<h4>Швидке замовлення води</h4>
+		<p class="tooltip_p">* - поля обов'язкові для заповнення.</p>
+		<p class="tooltip_p">Ціна змінюється в залежності від кількості замовлених бутлів!</p>
+		<form action="">
+			<span class="price_info">Бутлів</span><input type="text" class="number_of_bottles_values" value="1" onkeypress="validate(event)"><span class="price_info" required>Ціна: <span class="total_price">89 <span class="small_text">грн.</span></span></span>
+
+			<span class="price_bottle">Ціна за бутель: <span class="price_bottle_number">89 грн.</span></span>
+
+			<ul class="contact">
+				<li>
+					<label class="ow_al">Iм`я<span class="ow_blue">*</span></label>
+					<input type="text" id="contact-name" class="contact-input contact_input" name="name" tabindex="1001" required="">
+				</li>
+				<li>
+					<label class="ow_al">Телефон<span class="ow_blue">*</span></label>
+					<input type="text" id="contact-phone" class="contact-input contact_input" name="name" tabindex="1001" required>
+				</li>
+				<li>
+					<label class="ow_al" for="contact-message">Повідомлення<span class="ow_blue">*</span></label>
+					<textarea type="text" id="contact-message" class="contact-input contact_input" name="name" tabindex="1001"></textarea>
+				</li>
+			</ul>
+			<p class="min_number">Мінімальне замовлення - 1 бутель</p>
+			<button class="sendpop_up">Замовити</button>
+		</form>
+		<img src="img/berehynya.png" alt="" class="img-responsive img_popup">
+	</div>
+
+
+	<div class="callback_modal hidden">
+		<div class="close"><i class="fa fa-times-circle"></i></div>
+		<h2>Зворотній дзвінок</h2>
+		<form id="callback-form">
+                <div class="text-center">
+                    <input name="name" class="form-control" placeholder="Ваше імя">
+                </div>
+                <div class="text-center">
+                    <input name="phone" class="form-control phone" placeholder="Ваш номер телефону">
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn-red">Замовити дзвінок</button>
+                </div>
+            </form>
+	</div>
+
+	
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/mmenu.min.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/scripts.min.js"></script>
+
+	
+	<script>
+	  $(window).on('load', function () {
+	    $preloader = $('.loaderArea'),
+	      $loader = $preloader.find('.loader');
+	    $loader.delay(3350).fadeOut();
+	    $preloader.delay(3350).fadeOut('slow');
+	  });
+	</script>
+	
+
+	<script type="text/javascript">
+                $(document).ready(function($) {
+
+                	
+					$(window).scroll(function(){
+						var off = $("#why").offset().top;
+				    	var top = $(this).scrollTop();
+						if ( top >= off ) {
+				 			    TweenMax.set(".section3 .line2", {rotation:180, transformOrigin: "0 50%"}); // rotate scale line to 0
+              
+                    // TweenMax.set(".section3 .line6", {rotation:180,scaleX: 0.001, transformOrigin: "0 50%"}); // rotate scale line to 0
+
+                    TweenMax.set(".section3 .line9", {rotation:180, transformOrigin: "0 50%"}); // rotate scale line to 0
+
+                    TweenMax.set(".section3 .line10", {rotation:180, transformOrigin: "0 50%"}); // rotate scale line to 0
+
+                 
+                    var tween = new TimelineMax()
+
+                        //Show line and first point
+                            .add(TweenMax.to(".section3 .punkt1", 0.3, {height: "100px", width: "70px"}))
+                            .add(TweenMax.to(".section3 .line1", 0.2, {height: "50px"}))
+
+                            .add(TweenMax.to(".section3 .line2", 0.01, {css:{opacity:1}}))
+                            .add(TweenMax.to(".section3 .line2", 0.7, {width: "280px", ease: Linear.easeNone}))
+
+                            .add(TweenMax.to(".section3 .line3", 0.4, {height: "80px", ease: Linear.easeNone}))
+
+                            .add(TweenMax.to(".coalfilter", 0.01, {css:{opacity:1}}))
+
+                            .add(TweenMax.to(".coalfilter_deck", 0.01, {css:{opacity:1}}))
+
+                            .add(TweenMax.to(".section3 .line4", 0.7, {width: "632px", ease: Linear.easeNone}))
+
+
+
+                            .add(TweenMax.to(".multimedia_filter", 0.01, {css:{opacity:1}}))
+                            .add(TweenMax.to(".img_filter_3 ", 0.01, {css:{opacity:1}}))
+                            .add(TweenMax.to(".multimedia_filter_deck", 0.01, {css:{opacity:1}}))
+
+
+                            .add(TweenMax.to(".section3 .device1", 0.01, {css:{opacity:1}}))
+
+                            .add(TweenMax.to(".section3 .line5", 0.7, {height: "150px"}))
+                            
+                            .add(TweenMax.to(".section3 .line9", 0.01, {css:{opacity:1}}))
+                            .add(TweenMax.to(".section3 .line9", 0.7, {width: "632px", ease: Linear.easeNone}))
+
+                            .add(TweenMax.to(".section3 .line8", 0.7, {height: "150px"}))
+
+
+
+                            .add(TweenMax.to(".ultraviolet_filter", 0.01, {css:{opacity:1}}))
+                            .add(TweenMax.to(".img_filter_4 ", 0.01, {css:{opacity:1}}))
+                            .add(TweenMax.to(".ultraviolet_filter_deck", 0.01, {css:{opacity:1}}))
+
+                            .add(TweenMax.to(".section3 .line6", 0.7, {width: "632px", ease: Linear.easeNone}))
+
+                            .add(TweenMax.to(".section3 .line7", 0.7, {height: "140px"}))
+
+                            .add(TweenMax.to(".section3 .line10", 0.01, {css:{opacity:1}}))
+                            .add(TweenMax.to(".section3 .line10", 0.1, { ease: Linear.easeNone}))
+                            .add(TweenMax.to(".section3 .line10", 0.7, { width: "500px"}))
+
+
+                            .add(TweenMax.to(".iodine_filter", 0.01, {css:{opacity:1}}))
+                            .add(TweenMax.to(".img_filter_5 ", 0.01, {css:{opacity:1}}))
+                            .add(TweenMax.to(".iodine_filter_deck", 0.01, {css:{opacity:1}}))
+				 		}
+					});
+
+                                         
+                });
+            </script>
+	
+
+	<script>
+    	$(document).ready(function(){
+		  $(document).on("mousemove",function(e){
+		  	if (window.innerWidth > 992){
+
+			    var xMouse = e.pageX;
+			    var yMouse = e.pageY;
+			    var xCenter = $(window).width()/2;
+			    var yCenter = $(window).height()/2;
+
+			    var offsetX = xMouse - xCenter;
+			    var offsetY = yMouse - yCenter;
+
+
+			    $(".anion .figure:nth-child(1)").css({
+			    	"margin-left": -offsetX*0.01+265,
+			    	"margin-top": -offsetY*0.01+70
+			    });
+
+			    $(".anion .figure:nth-child(2)").css({
+			    	"margin-left": -offsetX*0.01+165,
+			    	"margin-top": -offsetY*0.01+15
+			    });
+
+
+			    $(".anion .figure:nth-child(3)").css({
+			    	"margin-left": offsetX*0.01+265,
+			    	"margin-top": -offsetY*0.01+15
+			    });
+
+
+			    $(".kation .figure:nth-child(1)").css({
+			    	"margin-left": -offsetX*0.01-145,
+			    	"margin-top": -offsetY*0.01+70
+			    });
+
+			    $(".kation .figure:nth-child(2)").css({
+			    	"margin-left": -offsetX*0.01-45,
+			    	"margin-top": -offsetY*0.01+15
+			    });
+
+
+			    $(".kation .figure:nth-child(3)").css({
+			    	"margin-left": offsetX*0.01-145,
+			    	"margin-top": -offsetY*0.01+15
+			    });
+
+
+			    $(".img-molecula_1").css({
+			    	"left": -offsetX*0.01+375,
+			    	"top": -offsetY*0.01+185
+			    });
+			    $(".img-molecula_2").css({
+			    	"left": -offsetX*0.01+33,
+			    	"top": -offsetY*0.01+500
+			    });
+		    }
+		   });
+		});
+    </script>
+
+
+    <script>
+    	function validate(evt) {
+		  var theEvent = evt || window.event;
+		  var key = theEvent.keyCode || theEvent.which;
+		  key = String.fromCharCode( key );
+		  var regex = /[1-9]/;
+		  if( !regex.test(key) ) {
+		    theEvent.returnValue = false;
+		    if(theEvent.preventDefault) theEvent.preventDefault();
+		  }
+		}
+
+		var q = parseInt($(".number_of_bottles_value").val());
+
+		$("body").on("click", ".fa", function (e) {
+			if ($(this).hasClass('fa-plus')){
+				q = parseInt($(".number_of_bottles_value").val());
+    			q++;
+    			$(".number_of_bottles_value").val(+q);
+    			if (q >=2 && q < 6 ){
+    				$(".product_price").html("<p>82 <sup> 00</sup>грн/шт.</p>")
+    				$(".Saving").html("<p>Економія від 7 <sup> 00</sup>грн/шт.</p>");
+    			}
+
+    			if (q >=6 && q < 11 ){
+    				$(".product_price").html("<p>76 <sup> 00</sup>грн/шт.</p>")
+    				$(".Saving").html("<p>Економія від 12 <sup> 00</sup>грн/шт.</p>");
+    			}
+
+    			if (q >=11 ){
+    				$(".product_price").html("<p>72 <sup> 00</sup>грн/шт.</p>")
+    				$(".Saving").html("<p>Економія від 17 <sup> 00</sup>грн/шт.</p>");
+    			}
+
+
+			}
+
+			if ($(this).hasClass('fa-minus')){
+			 	q = parseInt($(".number_of_bottles_value").val());
+    			if(q > 1){
+	    			q--;	
+	    		}
+    			$(".number_of_bottles_value").val(+q);
+    			if (q < 2 ){
+    				$(".product_price").html("<p>89 <sup> 00</sup>грн/шт.</p>")
+    				$(".Saving").html("<br>");
+    			}
+    			if (q >=2 && q < 6 ){
+    				$(".product_price").html("<p>82 <sup> 00</sup>грн/шт.</p>")
+    				$(".Saving").html("<p>Економія від 7 <sup> 00</sup>грн/шт.</p>");
+    			}
+
+    			if (q >=6 && q < 11 ){
+    				$(".product_price").html("<p>76 <sup> 00</sup>грн/шт.</p>")
+    				$(".Saving").html("<p>Економія від 12 <sup> 00</sup>грн/шт.</p>");
+    			}
+
+    			if (q >=11 ){
+    				$(".product_price").html("<p>72 <sup> 00</sup>грн/шт.</p>")
+    				$(".Saving").html("<p>Економія від 17 <sup> 00</sup>грн/шт.</p>");
+    			}
+			}
+		})
+
+    </script>
+
+    <script>
+    	$(function() {
+		    $("#my-menu").mmenu({
+		        extensions: ["theme-black", "shadow-page", "effect-menu-slide","pagedim-black"],
+		        offCanvas: {
+		            position: "right"
+		        }
+		    });
+		    var e = $("#my-menu").data("mmenu");
+		    e.bind("open:finish", function() {
+		        $(".hamburger").addClass("is-active")
+		    }), e.bind("close:finish", function() {
+		        $(".hamburger").removeClass("is-active")
+		    })
+		});
+    </script>
+
+    <script type="text/javascript">
+		 $(document).ready(function(){
+
+		 	$(".order_water_mobile").on("click", function(){
+		 		var price_product = 89
+		 		var plata = 0;
+
+		 		$(".popup, .curtains").removeClass("hidden")
+		 		$(".number_of_bottles_values").val($(".number_of_bottles_value").val());
+
+		 			 if ($(".number_of_bottles_values").val() == 1) {
+			 			plata = price_product;
+			 			$(".total_price").text(plata + 'грн.');
+			 			$(".price_bottle").text("Ціна за бутель 89 грн.");
+			 		}
+
+			 		if ($(".number_of_bottles_values").val() >= 2 && $(".number_of_bottles_values").val() < 6) {
+			 			plata = price_product * $(".number_of_bottles_values").val() - $(".number_of_bottles_values").val() * 7;
+			 			$(".total_price").text(plata + 'грн.');
+			 			$(".price_bottle").text("Ціна за бутель 82 грн.");
+			 		}
+
+			 		if ($(".number_of_bottles_values").val() >= 6 && $(".number_of_bottles_values").val() < 11) {
+			 			plata = price_product * $(".number_of_bottles_values").val() - $(".number_of_bottles_values").val() * 13;
+			 			$(".total_price").text(plata + 'грн.');
+			 			$(".price_bottle").text("Ціна за бутель 76 грн.");
+			 		}
+
+			 		if ($(".number_of_bottles_values").val() >= 11) {
+			 			plata = price_product * $(".number_of_bottles_values").val() - $(".number_of_bottles_values").val() * 17;
+			 			$(".total_price").text(plata + 'грн.');
+			 			$(".price_bottle").text("Ціна за бутель 72 грн.");
+			 		}
+
+		 		$('.popup .number_of_bottles_values').on('input keyup', function(e) {
+				    if ($(this).val() == 1) {
+			 			plata = price_product;
+			 			$(".total_price").text(plata + 'грн.');
+			 			$(".price_bottle").text("Ціна за бутель 89 грн.");
+			 		}
+
+			 		if ($(this).val() >= 2 && $(this).val() < 6) {
+			 			plata = price_product * $(this).val() - $(this).val() * 7;
+			 			$(".total_price").text(plata + 'грн.');
+			 			$(".price_bottle").text("Ціна за бутель 82 грн.");
+			 		}
+
+			 		if ($(this).val() >= 6 && $(this).val() < 11) {
+			 			plata = price_product * $(this).val() - $(this).val() * 13;
+			 			$(".total_price").text(plata + 'грн.');
+			 			$(".price_bottle").text("Ціна за бутель 76 грн.");
+			 		}
+
+			 		if ($(this).val() >= 11) {
+			 			plata = price_product * $(this).val() - $(this).val() * 17;
+			 			$(".total_price").text(plata + 'грн.');
+			 			$(".price_bottle").text("Ціна за бутель 72 грн.");
+			 		}
+
+				});
+		 	})
+
+		 	
+		 	$(".order_water").on("click", function(){
+		 		var price_product = 89
+		 		var plata = 0;
+
+		 		$(".number_of_bottles_values").val($(this).val())
+		 		$(".total_price").text($(this).attr("title"))
+		 		$(".price_bottle_number").text($(this).attr("name"))
+
+		 		$(".popup, .curtains").removeClass("hidden")
+		 		$("body").addClass("overflow")
+
+		 		var aquant = $(".number_of_bottles_values").val();
+		 		$('.popup .number_of_bottles_values').on('input keyup', function(e) {
+		 			
+				    if ($(this).val() == 1) {
+			 			plata = price_product;
+			 			$(".total_price").text(plata + 'грн.')
+			 			$(".price_bottle_number").text("89 грн.")
+			 		}
+
+			 		if ($(this).val() >= 2 && $(this).val() < 6) {
+			 			plata = price_product * $(this).val() - $(this).val() * 7;
+			 			$(".total_price").text(plata + 'грн.')
+			 			$(".price_bottle_number").text("82 грн.")
+			 		}
+
+			 		if ($(this).val() >= 6 && $(this).val() < 11) {
+			 			plata = price_product * $(this).val() - $(this).val() * 13;
+			 			$(".total_price").text(plata + 'грн.')
+			 			$(".price_bottle_number").text("76 грн.")
+			 		}
+
+			 		if ($(this).val() >= 11) {
+			 			plata = price_product * $(this).val() - $(this).val() * 17;
+			 			$(".total_price").text(plata + 'грн.')
+			 			$(".price_bottle_number").text("72 грн.")
+			 		}
+
+				});
+
+		 	})
+
+		 	$(".back_call").on("click", function(){
+		 		$(".callback_modal, .curtains").removeClass("hidden")
+		 		$("body").addClass("overflow")
+		 	})
+
+		 	$(".order_water_mobile").on("click", function(){
+		 		$("body").addClass("overflow");
+		 	})
+
+		 	$(".close").on("click", function(){
+		 		$(".popup, .curtains").addClass("hidden")
+		 		$(".callback_modal, .curtains").addClass("hidden")
+		 		$("body").removeClass("overflow")
+		 	})
+
+		 	$(".curtains").on("click", function(){
+
+		 		$(".popup, .curtains, .callback_modal").addClass("hidden")
+		 		$("body").removeClass("overflow")
+		 	})
+
+		 	
+
+		    $("#test_ul_m").on("click","a", function (event) {
+		        event.preventDefault();
+		        var id  = $(this).attr('href'),
+		            top = $(id).offset().top;
+		        $('body,html').animate({scrollTop: top}, 1500);
+		    });
+
+		    $(".hamburger ").on("click", function (event) {
+		        event.preventDefault();
+		        $('body,html').animate({scrollTop: 0}, 1500);
+		    });
+
+		});
+	</script>
+
+
+
+</body>
+</html>
